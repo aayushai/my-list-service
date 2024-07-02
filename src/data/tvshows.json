@@ -1,0 +1,54 @@
+[
+  {
+    "id": "tvshow1",
+    "title": "Comedy Show",
+    "description": "A hilarious TV show",
+    "genres": ["Comedy"],
+    "episodes": [
+      {
+        "episodeNumber": 1,
+        "seasonNumber": 1,
+        "releaseDate": "2024-01-01T00:00:00Z",
+        "director": "Director B",
+        "actors": ["Actor C", "Actor D"]
+      },
+      {
+        "episodeNumber": 2,
+        "seasonNumber": 1,
+        "releaseDate": "2024-02-01T00:00:00Z",
+        "director": "Director B",
+        "actors": ["Actor C", "Actor D"]
+      }
+    ]
+  },
+  {
+    "id": "tvshow2",
+    "title": "Fantasy Series",
+    "description": "A magical fantasy series",
+    "genres": ["Fantasy"],
+    "episodes": [
+      {
+        "episodeNumber": 1,
+        "seasonNumber": 1,
+        "releaseDate": "2024-01-01T00:00:00Z",
+        "director": "Director E",
+        "actors": ["Actor G", "Actor H"]
+      }
+    ]
+  },
+  {
+    "id": "tvshow3",
+    "title": "Horror Anthology",
+    "description": "A chilling horror anthology",
+    "genres": ["Horror"],
+    "episodes": [
+      {
+        "episodeNumber": 1,
+        "seasonNumber": 1,
+        "releaseDate": "2024-01-01T00:00:00Z",
+        "director": "Director F",
+        "actors": ["Actor I", "Actor J"]
+      }
+    ]
+  }
+]

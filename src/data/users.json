@@ -1,0 +1,29 @@
+[
+  {
+    "id": "user1",
+    "username": "user1",
+    "preferences": {
+      "favoriteGenres": ["Action", "Comedy"],
+      "dislikedGenres": ["Horror"]
+    },
+    "watchHistory": []
+  },
+  {
+    "id": "user2",
+    "username": "user2",
+    "preferences": {
+      "favoriteGenres": ["Drama", "Romance"],
+      "dislikedGenres": ["SciFi"]
+    },
+    "watchHistory": []
+  },
+  {
+    "id": "user3",
+    "username": "user3",
+    "preferences": {
+      "favoriteGenres": ["Fantasy", "Horror"],
+      "dislikedGenres": ["Comedy"]
+    },
+    "watchHistory": []
+  }
+]

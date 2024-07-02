@@ -1,0 +1,18 @@
+[
+  {
+    "userId": "user1",
+    "itemId": "movie1"
+  },
+  {
+    "userId": "user1",
+    "itemId": "tvshow1"
+  },
+  {
+    "userId": "user2",
+    "itemId": "movie2"
+  },
+  {
+    "userId": "user3",
+    "itemId": "tvshow3"
+  }
+]

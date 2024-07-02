@@ -1,0 +1,29 @@
+[
+  {
+    "id": "movie1",
+    "title": "Action Movie",
+    "description": "An action-packed movie",
+    "genres": ["Action"],
+    "releaseDate": "2024-01-01T00:00:00Z",
+    "director": "Director A",
+    "actors": ["Actor A", "Actor B"]
+  },
+  {
+    "id": "movie2",
+    "title": "Romantic Drama",
+    "description": "A touching romantic drama",
+    "genres": ["Romance", "Drama"],
+    "releaseDate": "2024-02-01T00:00:00Z",
+    "director": "Director B",
+    "actors": ["Actor C", "Actor D"]
+  },
+  {
+    "id": "movie3",
+    "title": "Sci-Fi Adventure",
+    "description": "An adventurous sci-fi movie",
+    "genres": ["SciFi", "Adventure"],
+    "releaseDate": "2024-03-01T00:00:00Z",
+    "director": "Director C",
+    "actors": ["Actor E", "Actor F"]
+  }
+]
