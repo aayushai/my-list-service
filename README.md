@@ -129,4 +129,89 @@ $ npm run start:dev
 ```
 - **The service will be available at http://localhost:3000.**
 
+## API Endpoints
+- **Add to My List:**
+- **URL:** /my-list/add
+- **Method:** POST
+- **Request Body:** 
+```bash
+{
+  "userId": "user1",
+  "itemId": "movie1"
+}
+```
+- **Response:** 
+```bash
+{
+  "_id": "unique_id",
+  "userId": "user1",
+  "itemId": "movie1"
+}
+```
+
+- **Remove to My List:**
+- **URL:** /my-list/remove
+- **Method:** DELETE
+- **Request Body:** 
+```bash
+{
+  "userId": "user1",
+  "itemId": "movie1"
+}
+```
+- **Response:** 
+```bash
+{
+  "message": "Item removed from list"
+}
+```
+- **List My Items**
+- **URL:** /my-list/list
+- **Method:** GET
+- **Query Parameters:** 
+- **userId:** User ID
+- **page:** Page number (default: 1)
+- **limit:** Number of items per page (default: 10)
+- **Response:**
+```bash
+[
+  {
+    "_id": "unique_id",
+    "userId": "user1",
+    "itemId": "movie1"
+  }
+]
+```
+## Testing
+
+- **Run the Tests**
+```bash
+$ npm run test
+```
+
+## Directory Structure 
+```bash
+my-list-service/
+├── src/
+│   ├── app.module.ts
+│   ├── main.ts
+│   ├── my-list/
+│   │   ├── my-list.controller.ts
+│   │   ├── my-list.module.ts
+│   │   ├── my-list.service.ts
+│   ├── schemas/
+│   │   ├── mylist.schema.ts
+│   │   ├── movie.schema.ts
+│   │   ├── tvshow.schema.ts
+│   │   ├── user.schema.ts
+│   ├── scripts/
+│   │   └── seed.ts
+├── test/
+│   ├── app.e2e-spec.ts
+│   ├── jest-e2e.json
+├── .env
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
