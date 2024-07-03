@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<!-- [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
 
@@ -65,4 +65,68 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+Nest is [MIT licensed](LICENSE). -->
+# My List Service
+
+This project implements the "My List" feature for an Stage OTT platform, allowing users to manage their personalized list of favorite movies and TV shows.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Database Setup](#database-setup)
+- [Running the Application](#running-the-application)
+- [API Endpoints](#api-endpoints)
+- [Testing](#testing)
+- [Directory Structure](#directory-structure)
+
+## Features
+
+- **Add to My List**: Add a movie or TV show to the user's list.
+- **Remove from My List**: Remove a movie or TV show from the user's list.
+- **List My Items**: Retrieve all items in the user's list with pagination support.
+
+## Technologies Used
+
+- **Backend Framework**: [NestJS](https://nestjs.com/)
+- **Database**: [MongoDB](https://www.mongodb.com/)
+- **Configuration Management**: [@nestjs/config](https://docs.nestjs.com/techniques/configuration)
+- **ORM**: [Mongoose](https://mongoosejs.com/)
+- **Testing Framework**: [Jest](https://jestjs.io/)
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+   $ git clone <repository_url>
+
+   $ cd my-list-service
+```
+
+## Install dependencies
+```bash
+$ npm install
+```
+
+## Create a .env file in the root directory and add your MongoDB connection string:
+```bash
+$ MONGODB_URI=<your_mongodb_connection_string>
+```
+
+## Database Setup
+- **Ensure MongoDB is running and accessible.**
+- **Seed the database with initial data:**
+```bash
+$ npm run seed
+```
+
+## Running the Application
+- **Start the application:**
+```bash
+$ npm run start:dev
+```
+- **The service will be available at http://localhost:3000.**
+
+
