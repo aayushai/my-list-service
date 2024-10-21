@@ -1,6 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
+export type UserDocument = User & Document;
 type Genre = 'Action' | 'Comedy' | 'Drama' | 'Fantasy' | 'Horror' | 'Romance' | 'SciFi';
 
 @Schema()
@@ -8,12 +9,17 @@ export class User extends Document {
   @Prop({ required: true })
   id: string;
 
-  @Prop({ required: true })
+  @Prop({ required: true, unique: true })
   username: string;
 
+  @Prop({ required: true })
+  password: string;
+
   @Prop({
-    favoriteGenres: [String],
-    dislikedGenres: [String],
+    type: {
+      favoriteGenres: [String],
+      dislikedGenres: [String],
+    }
   })
   preferences: {
     favoriteGenres: Genre[];
@@ -21,7 +27,7 @@ export class User extends Document {
   };
 
   @Prop({
-    watchHistory: [{
+    type: [{
       contentId: String,
       watchedOn: Date,
       rating: Number,
